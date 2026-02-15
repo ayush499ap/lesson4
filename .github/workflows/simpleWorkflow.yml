@@ -1,0 +1,15 @@
+name: workflow overview
+on:
+  workflow_dispatch: 
+jobs:
+  testjob:
+    name: newjob
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        id: stepId
+        run: echo "Hello, to the first step"
+      - name: step2
+        id: shellStep
+        shell: python
+        run: print("Simran in Python")
